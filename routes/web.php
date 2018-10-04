@@ -12,3 +12,6 @@
 */
 
 Route::get('/', 'LoginController@index');
+Route::get('/login', 'LoginController@index')->name('login');
+Route::get('/register', 'RegisterController@index')->name('register');
+Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
