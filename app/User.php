@@ -27,4 +27,12 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    public function piggy()
+    {
+        return $this->hasMany('App\piggy');
+    }
+    public function admin()
+    {
+        return $this->hasOne('App\admin');
+    }
 }

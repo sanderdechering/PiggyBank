@@ -148,6 +148,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
 
+
         /*
          * Package Service Providers...
          */
@@ -166,7 +167,10 @@ return [
          * Materialize
          */
         Skydiver\LaravelMaterializeCSS\MaterializeCSSServiceProvider::class,
-
+        /*
+         * Chart.js
+         */
+        Fx3costa\LaravelChartJs\Providers\ChartjsServiceProvider::class,
         /*
          * IDE Helper
          */

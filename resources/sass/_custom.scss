@@ -5,3 +5,45 @@
 .header{
   font-weight: 300;
 }
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+a{
+  color: rgba(0,0,0,0.87) !important;
+}
+.piggy-name::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.piggy-name:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+
+.piggy-name::-moz-placeholder {  /* Firefox 19+ */
+  text-align: center;
+}
+
+.piggy-name:-ms-input-placeholder {
+  text-align: center;
+}
+.piggy-name { display: block; margin: 0 auto; }
+:focus{
+  outline: 0 !important;
+}
+:active{
+  outline: 0 !important;
+}
+form{
+  display: inline-block;
+}
+.button-flat{
+  border: none !important;
+  background-color: transparent !important;
+}

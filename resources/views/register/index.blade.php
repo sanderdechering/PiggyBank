@@ -1,6 +1,7 @@
 @extends('layout.app')
 
 @section('content')
+    @include('includes.message')
     <div class="row">
         <div class="col s4 offset-s4 card">
             <div class="row">
@@ -14,21 +15,22 @@
                         <h6>Register</h6>
                     </div>
                 </a>
-                <form class="col s12">
+                <form class="col s12" method="POST" action="{{route('attemptregister')}}">
+                    @csrf
                     <div class="input-field col s12 mt-4">
-                        <input id="text" type="text" class="validate">
+                        <input id="text" type="text" class="validate" name="name">
                         <label for="text">Naam</label>
                     </div>
                     <div class="input-field col s12 mt-4">
-                        <input id="email" type="text" class="validate">
+                        <input id="email" type="text" class="validate" name="email">
                         <label for="email">Email</label>
                     </div>
                     <div class="input-field col s12 mt-4">
-                        <input id="password" type="text" class="validate">
+                        <input id="password" type="text" class="validate" name="password">
                         <label for="password">Wachtwoord</label>
                     </div>
                     <div class="input-field col s12 mt-4">
-                        <input id="password" type="text" class="validate">
+                        <input id="password" type="text" class="validate" name="password_confirmation">
                         <label for="password">Wachtwoord opnieuw</label>
                     </div>
                     <div class="input-field col s12 mt-3">

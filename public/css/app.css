@@ -7,6 +7,64 @@
   font-weight: 300;
 }
 
+/* label focus color */
+
+.input-field input[type=text]:focus + label {
+  color: #000;
+}
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  -webkit-box-shadow: 0 1px 0 0 #000;
+          box-shadow: 0 1px 0 0 #000;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.piggy-name::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.piggy-name:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+
+.piggy-name::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+
+.piggy-name:-ms-input-placeholder {
+  text-align: center;
+}
+
+.piggy-name {
+  display: block;
+  margin: 0 auto;
+}
+
+:focus {
+  outline: 0 !important;
+}
+
+:active {
+  outline: 0 !important;
+}
+
+form {
+  display: inline-block;
+}
+
+.button-flat {
+  border: none !important;
+  background-color: transparent !important;
+}
+
 .m-1 {
   margin: 5px 5px 5px 5px;
 }
@@ -77,6 +135,66 @@
 
 .w-25 {
   width: 25%;
+}
+
+.p-1 {
+  margin: 5px 5px 5px 5px;
+}
+
+.p-2 {
+  margin: 10px 10px 10px 10px;
+}
+
+.p-3 {
+  margin: 15px 15px 15px 15px;
+}
+
+.p-4 {
+  margin: 20px 20px 20px 20px;
+}
+
+.p-5 {
+  margin: 25px 25px 25px 25px;
+}
+
+.pt-1 {
+  margin-top: 10px;
+}
+
+.pt-2 {
+  margin-top: 20px;
+}
+
+.pt-3 {
+  margin-top: 30px;
+}
+
+.pt-4 {
+  margin-top: 40px;
+}
+
+.pt-5 {
+  margin-top: 50px;
+}
+
+.pb-1 {
+  margin-bottom: 10px;
+}
+
+.pb-2 {
+  margin-bottom: 20px;
+}
+
+.pb-3 {
+  margin-bottom: 30px;
+}
+
+.pb-4 {
+  margin-bottom: 40px;
+}
+
+.pb-5 {
+  margin-bottom: 50px;
 }
 
 .navbar-laravel {
