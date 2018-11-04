@@ -4,11 +4,16 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\user;
 use Redirect;
+use Auth;
 class AdminsettingsController extends Controller
 {
     public function index(){
+        $user_specific = user::find(Auth::id());
+        if ($user_specific->admin->type == 1){
+            return view('dashboard/asettings')->with('users',user::all());
+        }
+        return Redirect::back()->withInput()->withErrors('U sneaky bitch');
 
-        return view('dashboard/asettings')->with('users', user::all());
     }
     public function destroy(Request $request)
     {
@@ -18,6 +23,5 @@ class AdminsettingsController extends Controller
         $user = user::where('id', $request->input('id'));
         $user->delete();
 
-        return Redirect::back()->withInput()->with('succes', ['User is deleted']);
     }
 }
